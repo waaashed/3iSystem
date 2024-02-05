@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Si l'inscription est réussie, basculez vers la page de connexion
             if (data === 'success') {
-                togglePanel('login');
             }
         })
         .catch(error => {
