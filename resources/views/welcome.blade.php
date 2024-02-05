@@ -52,7 +52,9 @@
                 <div class="toggle-panel toggle-right">
                     <h1>Bonjour, l'Ami !</h1>
                     <p>Inscrivez-vous avec vos détails personnels pour utiliser toutes les fonctionnalités du site</p>
-                    <button class="hidden" id="register">S'inscrire</button>
+
+                    <button class="hidden" id="registerToggle">S'inscrire</button>
+
                 </div>
             </div>
         </div>

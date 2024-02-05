@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('bienvenue', function () {
     return view('bienvenue');
 });
+
+Route::post('login', 'AuthController@login')->name('login');
