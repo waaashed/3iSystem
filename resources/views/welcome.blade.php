@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Se connecter à FishGuard</title>
-    <img src="fishg.png" alt="Fishguard Image" id="fishguard-image" class="hidden" style="width: 200px; height: auto; margin-top: -110px;">
-    <h1>‎</h1>
     <link rel="icon" href="fishg.png">
     <!-- Autres métadonnées et liens -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -54,7 +52,11 @@
                 <div class="toggle-panel toggle-right">
                     <h1>Bonjour, l'Ami !</h1>
                     <p>Inscrivez-vous avec vos détails personnels pour utiliser toutes les fonctionnalités du site</p>
+<<<<<<< HEAD
                     <button class="hidden" id="register">S'inscrire</button>
+=======
+                    <button class="hidden" id="registerToggle">S'inscrire</button>
+>>>>>>> ad5c48824abefa8d46110ac7e2a01d7758e80a90
                 </div>
             </div>
         </div>
