@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+TEST
 # 3iSystem
 Créer un site dynamique
 =======
