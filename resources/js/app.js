@@ -1,4 +1,5 @@
 import './bootstrap';
+
 const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
@@ -12,18 +13,38 @@ loginBtn.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var loginForm = document.getElementById("loginForm");
+    var registrationForm = document.getElementById("registrationForm");
 
-    loginForm.addEventListener("submit", function(event) {
+    registrationForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        var email = document.getElementById("loginEmail").value;
-        var password = document.getElementById("loginPassword").value;
+        var name = document.getElementById("registrationName").value;
+        var email = document.getElementById("registrationEmail").value;
+        var password = document.getElementById("registrationPassword").value;
 
-        if (email.toLowerCase() === "admin@admin" && password === "admin") {
-            window.location.href = "/bienvenue";
-        } else {
-            alert("Identifiants incorrects. Veuillez réessayer.");
-        }
+        // Validate the form fields (you can add more robust validation)
+
+        // Send the registration data to the server using Fetch API or XMLHttpRequest
+        fetch('register.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                'name': name,
+                'email': email,
+                'password': password
+            }),
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            // You can handle the response as needed (e.g., show a success message or redirect)
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     });
+
+    // The rest of your existing JavaScript code
 });

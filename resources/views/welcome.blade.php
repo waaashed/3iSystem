@@ -3,7 +3,6 @@
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,20 +19,19 @@
 </head>
 
 <body>
-<script src="{{ asset('js/app.js') }}"></script>
-<!-- Inclure custom.js si nécessaire -->
-<script src="{{ asset('js/app.js') }}"></script>
-
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Inclure custom.js si nécessaire -->
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form id="registrationForm">
                 <h1>Créer un Compte</h1>
                 <span>utilisez votre email pour l'inscription</span>
-                <input type="text" placeholder="Nom">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mot de passe">
-                <button>S'inscrire</button>
+                <input type="text" placeholder="Nom" id="registrationName">
+                <input type="email" placeholder="Email" id="registrationEmail">
+                <input type="password" placeholder="Mot de passe" id="registrationPassword">
+                <button type="submit">S'inscrire</button>
             </form>
         </div>
         <div class="form-container sign-in">
