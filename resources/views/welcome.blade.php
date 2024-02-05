@@ -54,6 +54,7 @@
                 <div class="toggle-panel toggle-right">
                     <h1>Bonjour, l'Ami !</h1>
                     <p>Inscrivez-vous avec vos détails personnels pour utiliser toutes les fonctionnalités du site</p>
+                    <a href="register.php" class="btn">S'inscrire</a>
                     <button class="hidden" id="register">S'inscrire</button>
                 </div>
             </div>
