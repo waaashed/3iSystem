@@ -31,7 +31,7 @@
                 <input type="text" placeholder="Nom" id="registrationName">
                 <input type="email" placeholder="Email" id="registrationEmail">
                 <input type="password" placeholder="Mot de passe" id="registrationPassword">
-                <button type="submit">S'inscrire</button>
+                <button type="submit" id="registerSubmit">S'inscrire</button>
             </form>
         </div>
         <div class="form-container sign-in">
@@ -49,12 +49,12 @@
                 <div class="toggle-panel toggle-left">
                     <h1>Rebonjour !</h1>
                     <p>Entrez vos détails personnels pour utiliser toutes les fonctionnalités du site</p>
-                    <button class="hidden" id="login">Se Connecter</button>
+                    <button class="hidden" id="loginToggle">Se Connecter</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>Bonjour, l'Ami !</h1>
                     <p>Inscrivez-vous avec vos détails personnels pour utiliser toutes les fonctionnalités du site</p>
-                    <a href="register.php" class="btn">S'inscrire</a>
+                    <a href="register.php" class="btn hidden" id="registerBtn">S'inscrire</a>
                     <button class="hidden" id="register">S'inscrire</button>
                 </div>
             </div>

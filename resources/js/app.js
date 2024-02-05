@@ -1,30 +1,48 @@
 import './bootstrap';
 
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById('container');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
+    const registerForm = document.getElementById('registrationForm');
+    const registerName = document.getElementById('registrationName');
+    const registerEmail = document.getElementById('registrationEmail');
+    const registerPassword = document.getElementById('registrationPassword');
+    const registerSubmit = document.getElementById('registerSubmit');
+    const registerToggle = document.getElementById('registerToggle');
+    const loginToggle = document.getElementById('loginToggle');
 
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-});
+    function togglePanel(panel) {
+        if (panel === 'login') {
+            container.classList.remove("active");
+            loginToggle.classList.add('hidden');
+            registerToggle.classList.remove('hidden');
+        } else if (panel === 'register') {
+            container.classList.add("active");
+            loginToggle.classList.remove('hidden');
+            registerToggle.classList.add('hidden');
+        }
+    }
 
-loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
-});
+    registerToggle.addEventListener('click', () => {
+        togglePanel('register');
+    });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var registrationForm = document.getElementById("registrationForm");
+    loginToggle.addEventListener('click', () => {
+        togglePanel('login');
+    });
 
-    registrationForm.addEventListener("submit", function(event) {
+    registerForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        var name = document.getElementById("registrationName").value;
-        var email = document.getElementById("registrationEmail").value;
-        var password = document.getElementById("registrationPassword").value;
+        // Obtenez les valeurs du formulaire
+        const name = registerName.value;
+        const email = registerEmail.value;
+        const password = registerPassword.value;
 
-        // Validate the form fields (you can add more robust validation)
+        // Validez les champs du formulaire (ajoutez une logique de validation si nécessaire)
 
-        // Send the registration data to the server using Fetch API or XMLHttpRequest
+        // Envoyez les données d'inscription au serveur en utilisant la Fetch API ou XMLHttpRequest
         fetch('register.php', {
             method: 'POST',
             headers: {
@@ -39,12 +57,14 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             console.log(data);
-            // You can handle the response as needed (e.g., show a success message or redirect)
+
+            // Si l'inscription est réussie, basculez vers la page de connexion
+            if (data === 'success') {
+                togglePanel('login');
+            }
         })
         .catch(error => {
             console.error('Error:', error);
         });
     });
-
-    // The rest of your existing JavaScript code
 });
