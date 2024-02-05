@@ -2,15 +2,9 @@ import './bootstrap';
 
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById('container');
-    const registerBtn = document.getElementById('register');
-    const loginBtn = document.getElementById('login');
-    const registerForm = document.getElementById('registrationForm');
-    const registerName = document.getElementById('registrationName');
-    const registerEmail = document.getElementById('registrationEmail');
-    const registerPassword = document.getElementById('registrationPassword');
-    const registerSubmit = document.getElementById('registerSubmit');
     const registerToggle = document.getElementById('registerToggle');
     const loginToggle = document.getElementById('loginToggle');
+    const registerForm = document.getElementById('registrationForm');
 
     function togglePanel(panel) {
         if (panel === 'login') {
@@ -36,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         // Obtenez les valeurs du formulaire
-        const name = registerName.value;
-        const email = registerEmail.value;
-        const password = registerPassword.value;
+        const name = document.getElementById('registrationName').value;
+        const email = document.getElementById('registrationEmail').value;
+        const password = document.getElementById('registrationPassword').value;
 
         // Validez les champs du formulaire (ajoutez une logique de validation si nécessaire)
 
