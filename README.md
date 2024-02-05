@@ -1,18 +1,36 @@
-# 3iSystem
-Créer un site dynamique
-=======
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="/public/fishguard.png" alt="Fishguard Image">
 </p>
 
-## About Laravel
+# FishGuard 🐟🔒 | 3iSystem 🚀
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Plongez dans la sécurité avec FishGuard, la solution de pointe on-premise pour contrer les tentatives de phishing, et explorez le potentiel de création de sites dynamiques avec Laravel, le framework web moderne.
+
+## FishGuard - Sécurité Avancée contre le Phishing
+
+Les utilisateurs victimes d'une tentative de phishing transfèrent leurs mails malveillants à la boîte dédiée en interne de FishGuard, et ce dernier prend le relais. Avec une détection intelligente, cette application extrait les détails critiques et offre une expérience utilisateur fluide pour une gestion aisée des menaces. Dotée de fonctionnalités automatisées, d'une sécurité renforcée et d'une conformité aux normes de confidentialité, FishGuard assure une réponse proactive aux menaces de phishing, protégeant ainsi vos données sensibles directement sur votre infrastructure locale.
+
+### Fonctionnalités FishGuard :
+
+1. **Réponse Automatique :** Envoie automatique d'une confirmation à chaque signalement de phishing, assurant aux utilisateurs que leur plainte a été reçue.
+2. **Réponse Personnalisée :** Les administrateurs système peuvent envoyer des réponses personnalisées pour informer les utilisateurs de la prise en charge de leur signalement.
+3. **Application Légère :** Une solution compacte et légère qui optimise l'utilisation des ressources système sans compromettre la performance.
+4. **Sécurité Renforcée :** FishGuard garantit une sécurité renforcée, protégeant les données sensibles contre les menaces de phishing.
+5. **On-Premise :** Une solution installée localement, offrant un contrôle total sur l'infrastructure et garantissant la confidentialité des données sur site.
+6. **Interface Simple et Intuitive :** Une interface conviviale spécialement conçue pour les administrateurs système, facilitant la gestion des signalements et des menaces.
+7. **Système de Faux Positif :** Intègre un mécanisme avancé de reconnaissance des faux positifs pour minimiser les erreurs dans le processus de détection.
+8. **Système de Blocage de Mail :** Capacité à bloquer les mails identifiés comme potentiellement dangereux, assurant une protection proactive contre les menaces de phishing.
+
+### Fonctionnalités futures FishGuard :
+
+1. **Système Communautaire :** Permet aux utilisateurs de signaler des adresses e-mail malveillantes, contribuant ainsi à la constitution d'une liste noire partagée.
+2. **Intégration d'une IA :** Intégration d'une intelligence artificielle pour détecter les fautes, les liens non sécurisés, les typosquatting, les langues étrangères, et d'autres indicateurs de tentatives de phishing avancées. Renforce la capacité de détection et réduit les risques liés aux attaques sophistiquées.
+
+## Laravel - Créez des Sites Dynamiques
+
+Laravel, un framework web moderne, offre une expérience de développement agréable et créative. Explorez ses fonctionnalités puissantes pour créer des sites dynamiques avec facilité.
+
+### Fonctionnalités Laravel :
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
@@ -22,49 +40,26 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Apprendre Laravel :
 
-## Learning Laravel
+Laravel dispose de la documentation la plus exhaustive et de bibliothèques de tutoriels vidéo parmi tous les frameworks d'application web modernes, facilitant son apprentissage.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Sponsors Laravel :
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Nous remercions nos sponsors, notamment **[Vehikl](https://vehikl.com/)**, **[Tighten Co.](https://tighten.co)**, **[WebReinvent](https://webreinvent.com/)**, et d'autres, pour leur soutien continu au développement de Laravel.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Contribuer à Laravel :
 
-## Laravel Sponsors
+Merci de considérer la contribution au framework Laravel ! Consultez le [guide de contribution](https://laravel.com/docs/contributions) pour démarrer.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Code de Conduite :
 
-### Premium Partners
+Afin de garantir que la communauté Laravel est accueillante pour tous, veuillez consulter et respecter le [Code de Conduite](https://laravel.com/docs/contributions#code-of-conduct).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Vulnérabilités de Sécurité :
 
-## Contributing
+Si vous découvrez une vulnérabilité de sécurité dans Laravel, veuillez envoyer un e-mail à Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). Toutes les vulnérabilités de sécurité seront traitées rapidement.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Licence Laravel :
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> origin/yoyo
+Le framework Laravel est un logiciel open source sous licence [MIT](https://opensource.org/licenses/MIT).

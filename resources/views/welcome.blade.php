@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Se connecter à FishGuard</title>
-    <img src="fishguard.png" alt="Fishguard Image" id="fishguard-image" class="hidden" style="width: 200px; height: auto; margin-top: -110px;">
+    <img src="fishg.png" alt="Fishguard Image" id="fishguard-image" class="hidden" style="width: 200px; height: auto; margin-top: -110px;">
     <h1>‎</h1>
-    <link rel="icon" href="fishguard.png">
+    <link rel="icon" href="fishg.png">
     <!-- Autres métadonnées et liens -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Inclure custom.css si nécessaire -->
